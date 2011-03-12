@@ -1,4 +1,12 @@
 SourceSpotlight::Application.routes.draw do
+  get "news_orgs/new"
+
+  get "quotes/new"
+
+  get "people/new"
+
+  get "stories/new"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
