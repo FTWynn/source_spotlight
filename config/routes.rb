@@ -1,11 +1,11 @@
 SourceSpotlight::Application.routes.draw do
+  resources :stories
 
   match "/contact", :to => "pages#contact"
   match "/about", :to => "pages#about"
   get "news_orgs/new"
   get "quotes/new"
   get "people/new"
-  get "stories/new"
 
   root :to => "pages#home"
 
