@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Source Spotlight</title>
-  <%= render 'layouts/stylesheets' %>
-</head>
-<body>
-<%= render 'layouts/header' %>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Source Spotlight</title>
+    <%= render 'layouts/stylesheets' %>
+  </head>
+  <body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+	<%= yield %>
+      </section>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+  </body>
 </html>
