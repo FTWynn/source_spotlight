@@ -7,4 +7,7 @@ class StoriesController < ApplicationController
     @story = Story.find(params[:id])
   end
 
+  def index
+    #something
+  end
 end
